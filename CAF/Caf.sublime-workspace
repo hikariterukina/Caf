@@ -1,0 +1,383 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"te",
+				"Text"
+			],
+			[
+				"time",
+				"Timetext"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "CAF.sln",
+			"settings":
+			{
+				"buffer_size": 417,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Caf.sublime-project",
+			"settings":
+			{
+				"buffer_size": 335,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "using System.Collections;\nusing System.Collections.Generic;\nusing UnityEngine;\nusing UnityEngine.UI;\n\npublic class GameController : MonoBehaviour \n{\n\n\tpublic static float time = 60;\n\tGameObject Timetext;\n\t// Use this for initialization\n\tvoid Start () \n\t{\n\t\ttime = 60;\n\t\tthis.Timetext = GameObject.Find(\"Timetext\");\n\t}\n\n\tpublic void Time() \n\t{\n\t\ttime -= Time.deltaTime;\n\t\tthis.time.GetCompornent<Text>().text = ((int)time).ToString(\"F0\");\n\n\t\tif (time <= 0)\n\t\t{\n\t\t\tenabled = false;\n\t\t}\n\t}\n\t\n\t// Update is called once per frame\n\tvoid Update () \n\t{\n\t\n\t}\n}\n",
+			"file": "Assets/Amuro/Script/GameController.cs",
+			"file_size": 591,
+			"file_write_time": 131720385187390329,
+			"settings":
+			{
+				"buffer_size": 552,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 458.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insall",
+				"Package Control: Install Package"
+			],
+			[
+				"remoce",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"package control:",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 490.0
+	},
+	"console":
+	{
+		"height": 171.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/amuro/Git/Caf/CAF"
+	],
+	"file_history":
+	[
+		"/D/amuro/NetWork Test_0510/",
+		"/C/Users/c17001/AppData/Roaming/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/C/Users/c17001/Desktop/config.json",
+		"/D/amuro/NetWork Test_0510/Assets/SphereScript.cs",
+		"/C/Users/c17001/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/OmniSharpServer/新しいテキスト ドキュメント.txt",
+		"/D/amuro/sublime_test/Assets/NewBehaviourScript.cs",
+		"/C/Users/c17001/AppData/Roaming/Sublime Text 3/Packages/User/OmniSharpSublime.sublime-settings",
+		"/D/amuro/sublime_test/sublime_test.sublime-project",
+		"/C/Users/c17001/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/amuro/NetWork Test_0510/NetWork Test_0510.sublime-project",
+		"/D/amuro/NetWork Test_0510/Assets/ShpereScript.cs",
+		"/C/Users/c17001/Desktop/SphereScript.cs",
+		"/D/amuro/20170131/git/README.md",
+		"/D/amuro/20170131/git/.gitignore",
+		"/C/Users/c17001/Desktop/proxy.conf",
+		"/C/Users/c17001/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/c17001/IdeaProjects/Selection/run/crash-reports/crash-2018-03-10_00.35.34-client.txt",
+		"/D/amuro/BADBOYMISCHIEF/.gitignore",
+		"/D/amuro/Git/GameContestGit/README.md",
+		"/D/amuro/BADBOYMISCHIEF/README.md",
+		"/C/Users/c17001/Documents/c17001unity/README.md",
+		"/D/amuro/Git/GameContestGit/.gitignore",
+		"/C/Users/c17001/Documents/c17001unity/.gitignore",
+		"/D/amuro/Unity/FukuokaGameContestGit/.gitignore",
+		"/D/amuro/Git/FukuokaGameContest/.gitignore",
+		"/D/amuro/Git/FukuokaGameContest/README.md",
+		"/D/amuro/Sounds/c17001_SE",
+		"/D/amuro/Git/Sample/okonomi",
+		"/D/amuro/Git/Sample/README.md",
+		"/D/amuro/Git/mao-seminar/member.html",
+		"/C/Users/c17001/Desktop/c17001 安室宥希人"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "CAF.sln",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Caf.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								328,
+								328
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 138.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Amuro/Script/GameController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								311,
+								311
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": true,
+							"oops":
+							{
+								"132,145": "'MonoBehaviour' is not a known identifier",
+								"192,196": "'Text' is not a known identifier",
+								"307,311": "'Text' is not a known identifier",
+								"312,313": "'GameController' does not contain a definition for 'GetComponent'",
+								"314,315": "Cannot convert from ? to [UnknownType Text]",
+								"359,368": "Error: Single",
+								"396,400": "'Text' is not a known identifier",
+								"401,402": "'Single' does not contain a definition for 'GetCompornent'",
+								"403,404": "'Single' does not contain a definition for 'GetCompornent'",
+								"404,408": "'?' does not contain a definition for 'text'",
+								"437,438": "Cannot convert from System.String to ?",
+								"464,471": "'enabled' is not a known identifier",
+								"474,479": "Cannot convert from System.Boolean to ?",
+								"66,77": "'UnityEngine' is not a known identifier",
+								"85,96": "'UnityEngine' is not a known identifier",
+								"97,99": "'?' does not contain a definition for 'UI'"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 68.8,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 108.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 36.8
+	},
+	"pinned_build_system": "Packages/User/python3.sublime-build",
+	"project": "Caf.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 292.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
