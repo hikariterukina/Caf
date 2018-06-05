@@ -22,8 +22,8 @@ public class Player:NetworkBehaviour {
         //Playerの視点操作
         float z = Input.GetAxis("Horizontal");                      
         transform.Rotate(0, z * rotate, 0);
-        float x = Input.GetAxis("Vertical");
 
+        float x = Input.GetAxis("Vertical");
         //Playerにノミがある時ない時の操作
         if (gameObject.tag == "Player") {
             transform.Translate(0, 0, x * move);
