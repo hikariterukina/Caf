@@ -6,6 +6,4 @@ using UnityEngine.Networking;
 public class GameDirector : NetworkBehaviour {
     public GameObject[] Players;
     public GameObject fleaPlayer;
-    public GameObject flea;
-
 }
