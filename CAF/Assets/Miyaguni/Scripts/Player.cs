@@ -11,7 +11,7 @@ public class Player:NetworkBehaviour {
     public GameObject fleaPlayer;
 
     [ClientCallback]
-    void Update() {
+    public void Update() {
         if (!isLocalPlayer) {
             return;
         }
