@@ -17,16 +17,18 @@ public class Player:NetworkBehaviour {
         GetComponent<MeshRenderer>().material.color = Color.red;
     }
 
-    void Update() {
-        if (!isLocalPlayer)
-            return;
-
+    [ClientCallback]
+    void FixedUpdate() {
         //Playerの視点操作
-        float z = Input.GetAxis("Horizontal");                      
-        transform.Rotate(0, z * rotate, 0);
-
+        float z = Input.GetAxis("Horizontal");                 
         float x = Input.GetAxis("Vertical");
-        //Playerにノミがある時ない時の操作
+        CmdMove(x, z);                      
+    }
+
+    [Command]
+    public void CmdMove(float x, float z) {
+        transform.Rotate(0, z * rotate, 0);   
+        //Playerにノミがある時ない時の操作               
         if (transform.Find("flea").gameObject.activeSelf) {
             transform.Translate(0, 0, x * move * 1.05f);
         } else {
@@ -34,21 +36,23 @@ public class Player:NetworkBehaviour {
         }
     }
 
+    [ClientCallback]
     void OnTriggerStay(Collider other) {
-        if (!isLocalPlayer)
-            return;
-
         //Playerのジャンプ
         if (Input.GetKeyDown(KeyCode.Space)) {
-            Rigidbody rigidbody = GetComponent<Rigidbody>();
-            rigidbody.AddForce(0,1*JumpForce,0);
+            float y = JumpForce;
+            CmdJump(y);
         }                            
     }
-    
-    void OnCollisionEnter(Collision hit) {
-        if (!isLocalPlayer)
-            return;
 
+    [Command]
+    public void CmdJump(float y) {
+        Rigidbody rigidbody = GetComponent<Rigidbody>();
+        rigidbody.AddForce(0, 1 * y , 0);
+    }
+    
+    [ClientCallback]
+    void OnCollisionEnter(Collision hit) {
         if (hit.gameObject.tag == "Player") {
             if (transform.Find("flea").gameObject.activeSelf) {
                 flea.SetActive(false);
