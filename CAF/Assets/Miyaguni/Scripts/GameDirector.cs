@@ -9,12 +9,8 @@ public class GameDirector : NetworkBehaviour {
 
     bool one;
 
-    void Start(){
-        Players = GameObject.FindGameObjectsWithTag("Player");
-        fleas = GameObject.FindGameObjectsWithTag("flea");
-    }
-
-    private void Update() {
+    [ServerCallback]
+    void Update() {
         Players = GameObject.FindGameObjectsWithTag("Player");
         fleas = GameObject.FindGameObjectsWithTag("flea");
 
